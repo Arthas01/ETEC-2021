@@ -1,0 +1,25 @@
+#include <stdio.h>						
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int media, prim, seg, ter, quar;
+
+main(){
+
+//-------------------------------
+//media de estudantes -- Funcionando
+
+setlocale(LC_ALL,"");
+printf("notas: ");
+
+scanf("%d", &prim );
+scanf("%d", &seg );
+scanf("%d", &ter );
+scanf("%d", &quar );
+
+
+
+media = prim * 2  + ter * 3 + quar * 5;
+printf("Média = %d", media);
+}
