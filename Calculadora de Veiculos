@@ -1,0 +1,21 @@
+#include <stdio.h>							
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+float custo, porcentagem;
+
+main(){
+
+//-------------------------------
+//calculadora de veiculos -- Funcionando
+
+setlocale(LC_ALL,"");
+printf("custo do carro:    ");
+
+scanf("%f", &custo );
+//scanf("%d", &porcentagem );
+
+custo = custo *0.28+ custo *0.45 + custo;
+printf("Custo total = %2.2f", custo);
+}
