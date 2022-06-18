@@ -15,3 +15,4 @@ printf("Digite um número:   ");
 scanf("%d", &numero);
 antecessor = numero - 1;
 printf("antecessor = %d", antecessor);
+}
