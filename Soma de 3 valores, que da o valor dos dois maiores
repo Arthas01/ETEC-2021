@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+
+//Programa que lê três valores e dá a soma dos dois maiores
+
+float a, b, c, total;
+
+main(){
+	
+	printf ("Digite o valor A ");
+	scanf("%f",&a);
+	printf ("Digite o valor B ");
+	scanf("%f",&b);
+	printf ("Digite o valor C ");
+	scanf("%f",&c);
+
+	if(a>b){
+		if(b>c){
+			total=a+b;
+		} else{
+			total=a+c;
+		}
+	}else{
+	if(a>c){
+			total=a+b;
+		}else{
+			total=c+b;
+		}
+	}
+	printf("Total da soma = %1.1f",total);
+	
+}
