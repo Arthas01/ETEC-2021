@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//programa que verifica as horas trabalhadas e o salário por hora de um trabalhador, calcula o salário de um mês, adiconando horas extras, se ocorreram
+
+float horas, salario, total;
+
+main(){
+	setlocale(LC_ALL,"");
+	printf ("Digite o salário por hora ");
+	scanf("%f",&salario);
+	printf ("Digite as horas trabalhadas ");
+	scanf("%f",&horas);
+	if(horas>160){
+		total =(salario*160)+(salario*(horas-160)*1.5);
+	}else{
+		total = salario*horas;
+	}
+	printf("Salário recebido no mês R$ %2.2f ",total);
+}
