@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//programa que pega duas notas de um aluno, faz a média aritmética e diz se o aluno foi aprovado ou reprovado
+
+float n1, n2, media;
+
+main() {
+	printf ("Digite a primeira nota do aluno ");
+	scanf("%f",&n1);
+	printf ("Digite a segunda nota do aluno ");
+	scanf("%f",&n2);
+	media = (n1+n2)/2;
+	setlocale(LC_ALL,"");
+	printf("Média final do aluno = %2.2f ",media);
+	if(media>=6){
+		printf(" Aprovado");
+	}else{
+		printf(" Reprovado");
+	}
+}
