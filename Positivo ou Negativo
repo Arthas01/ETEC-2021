@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//programa que lê um número e vê se é negativo ou positivo
+
+int valor;
+
+main(){
+	setlocale(LC_ALL,"");
+	printf ("Digite um número ");
+	scanf("%d",&valor);
+	if(valor>=0){
+		printf("Positivo");
+	}else{
+		printf("Negativo");
+	}
+}
