@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//Programa que lê três medidas e analisa se formam um triângulo
+
+float a, b, c;
+
+main(){
+	setlocale(LC_ALL,"");
+	printf ("Digite a medida A ");
+	scanf("%f",&a);
+	printf ("Digite a medida B ");
+	scanf("%f",&b);
+	printf ("Digite a medida C ");
+	scanf("%f",&c);
+	if((c<a+b)&&(b<a+c)&&(a<b+c)){
+		
+		printf ("É um triângulo");
+	} else {
+		
+		printf ("Não é um triângulo");
+	}
+}
