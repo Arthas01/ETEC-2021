@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//Programa que lê o saldo, débito e crédito de uma pessoa, e calcula seu saldo atual
+
+float saldo, debito, credito, saldoatual;
+
+main(){
+	
+	printf ("Digite o saldo ");
+	scanf("%f",&saldo);
+	setlocale(LC_ALL,"");
+	printf ("Digite o crédito ");
+	scanf("%f",&credito);
+	printf ("Digite o débito ");
+	scanf("%f",&debito);
+	saldoatual = saldo - debito +credito;
+	printf ("Saldo atual = R$ %2.2f", saldoatual);
+	if(saldoatual>=0){
+		printf("  Saldo atual positivo ");
+	}else{
+		printf("  Saldo atual negativo ");
+	}
+	
+}
