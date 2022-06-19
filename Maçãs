@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+//programa que lê o número de maçãs compradas, calcula e escreve o resultado final da compra
+
+int qtde;
+float custo;
+
+main(){
+	setlocale(LC_ALL,"");
+	printf ("Digite o número de maçãs ");
+	scanf("%d",&qtde);
+	if(qtde>=12){
+		custo = qtde;
+	}else{
+		custo = qtde*1.3;
+	}
+	setlocale(LC_ALL,"");
+	printf("Preço da compra R$ %2.2f ",custo);
+}
